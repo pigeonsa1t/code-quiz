@@ -22,12 +22,6 @@ var questionsArray = [
     }, 
 ]
 
-for(var i=0; i< questionsArray.length; i++) {
-
-}
-
-
-
 
 // EVERYTHING UNDER THIS LINE WAS DONE DURING TUTOR SESSION 3.26.22 //
 startButton.addEventListener("click", function(){
