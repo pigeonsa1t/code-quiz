@@ -1,3 +1,58 @@
+html, body {
+  height: 100%;
+}
+
 .hide {
     display: none;
+}
+
+header {
+    background: rgb(23, 88, 53,0.75);
+    border-bottom: rgb(8, 39, 22) 2px solid;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    font: 16px lighter;
+    margin-top: auto;
+    flex-shrink: 0;
+    justify-content: space-between;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+footer {
+    background: rgb(23, 88, 53,0.75);
+    border-top: rgb(8, 39, 22) 2px solid;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    flex: 1;
+    margin: 400px 0 0;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+footer h2 {
+    font-size:30px
+}
+
+footer h3 {
+    font-size: 30px;
+}
+footer div {
+    line-height: auto;
+}
+footer p {
+    font-size: 16px;
+    line-height: normal;
 }
