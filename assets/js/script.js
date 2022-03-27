@@ -14,13 +14,13 @@ var questionsArray = [
     },
     {
         text: "question two",   // THIS IS A REFERENCE TO HTML ELEMENT*
-        choices: [1, 2, 3],
+        choices: [1, 2, 3],     // THIS DESCRIBES THE POSSIBLE CHOICES THE USER CAN MAKE
         answer: 3               // THIS IS THE CORRECT ANSWER 
     },
     {
         text: "question three", // THIS IS A REFERENCE TO HTML ELEMENT*
-        choices: [1, 2, 3],
-        answer: 1
+        choices: [1, 2, 3],     // THIS DESCRIBES THE POSSIBLE CHOICES THE USER CAN MAKE
+        answer: 1               // THIS IS THE CORRECT ANSWER 
     }, 
 ]
 // ***(WHERE I AM BUILDING OUT THE QUESTIONS TITLE, BODY, ANSWERS, RATHER THAN IN JS).
