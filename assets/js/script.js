@@ -21,9 +21,28 @@ var questionsArray = [
         text: "question three", // THIS IS A REFERENCE TO HTML ELEMENT*
         choices: [1, 2, 3],     // THIS DESCRIBES THE POSSIBLE CHOICES THE USER CAN MAKE
         answer: 1               // THIS IS THE CORRECT ANSWER 
+    },
+    {
+        text: "question four", // THIS IS A REFERENCE TO HTML ELEMENT*
+        choices: [1, 2, 3],     // THIS DESCRIBES THE POSSIBLE CHOICES THE USER CAN MAKE
+        answer: 2               // THIS IS THE CORRECT ANSWER 
+    },  
+    {
+        text: "question five", // THIS IS A REFERENCE TO HTML ELEMENT*
+        choices: [1, 2, 3],     // THIS DESCRIBES THE POSSIBLE CHOICES THE USER CAN MAKE
+        answer: 1               // THIS IS THE CORRECT ANSWER 
     }, 
-]
-// ***(WHERE I AM BUILDING OUT THE QUESTIONS TITLE, BODY, ANSWERS, RATHER THAN IN JS).
+    {
+        text: "question six", // THIS IS A REFERENCE TO HTML ELEMENT*
+        choices: [1, 2, 3],     // THIS DESCRIBES THE POSSIBLE CHOICES THE USER CAN MAKE
+        answer: 3               // THIS IS THE CORRECT ANSWER 
+    }, 
+    {
+        text: "question seven", // THIS IS A REFERENCE TO HTML ELEMENT*
+        choices: [1, 2, 3],     // THIS DESCRIBES THE POSSIBLE CHOICES THE USER CAN MAKE
+        answer: 3              // THIS IS THE CORRECT ANSWER 
+    }, 
+]// ***(WHERE I AM BUILDING OUT THE QUESTIONS TITLE, BODY, ANSWERS, RATHER THAN IN JS).
 
 
 // EVERYTHING UNDER THIS LINE WAS DONE DURING TUTOR SESSION 3.26.22 //
@@ -87,10 +106,9 @@ function buildQuestion() {
 
 
 // THIS IS THE VARIABLE WHERE I AM DEFINING THE USER'S DATE AS HIGHSCORE*
-var highscores = []
-// *** I'M GOING TO BUILD OUT THE STRUCTURE FOR DISPLAYING HIGHSCORE IN HTML
-// *** AS WITH THE QUESTIONS, I WOULD PREFER TO DESIGN THEM IN HTML AND CSS
-// *** AND REFER TO THEM HERE IN JS TO MANIPULATE THE GAME FUNCTIONS.
+var highscores = []         // *** I'M GOING TO BUILD OUT THE STRUCTURE FOR DISPLAYING HIGHSCORE IN HTML
+                            // *** AS WITH THE QUESTIONS, I WOULD PREFER TO DESIGN THEM IN HTML AND CSS
+                            // *** AND REFER TO THEM HERE IN JS TO MANIPULATE THE GAME FUNCTIONS.
 
 // THIS VARIABLE WILL DEFINE "SCORE" AS AN OBJECT:
 var scoreObj = {
