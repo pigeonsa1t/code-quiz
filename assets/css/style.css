@@ -8,6 +8,7 @@ html, body {
 
 header {
     background: rgb(23, 88, 53,0.75);
+    background-size: cover;
     border-bottom: rgb(8, 39, 22) 2px solid;
     color: white;
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -33,10 +34,11 @@ header nav ul li a {
 footer {
     background: rgb(23, 88, 53,0.75);
     border-top: rgb(8, 39, 22) 2px solid;
+    background-size: cover;
     color: white;
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
     flex: 1;
-    margin: 400px 0 0;
+    margin: 200px 0 0;
     padding: 40px 35px;
     display: flex;
     justify-content: space-between;

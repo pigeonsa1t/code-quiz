@@ -5,45 +5,46 @@ var i = 0;
 // THIS IS DESCRIBING THAT THE VARIABLE "score" INITIALLY STARTS AT 0 POINTS:
 var score = 0;
 
+// NEED TO MAKE A LISTENER EVENT TO SHOW WHEN AN A QUESTION HAS BEEN ANSWERED
+
 // EXPLAINING THE CONTENT OF EACH QUESTION IN THE QUIZ //
 var questionsArray = [
     {
-        text: "question one",   // THIS IS A REFERENCE TO HTML ELEMENT*
+        text: document.getElementById(""),   // THIS IS A REFERENCE TO HTML ELEMENT*
         choices: [1, 2, 3],     // THIS DESCRIBES THE POSSIBLE CHOICES THE USER CAN MAKE
         answer: 2               // THIS IS THE CORRECT ANSWER 
     },
     {
-        text: "question two",   // THIS IS A REFERENCE TO HTML ELEMENT*
+        text: document.getElementById(""),  // THIS IS A REFERENCE TO HTML ELEMENT*
         choices: [1, 2, 3],     // THIS DESCRIBES THE POSSIBLE CHOICES THE USER CAN MAKE
         answer: 3               // THIS IS THE CORRECT ANSWER 
     },
     {
-        text: "question three", // THIS IS A REFERENCE TO HTML ELEMENT*
+        text: document.getElementById(""), // THIS IS A REFERENCE TO HTML ELEMENT*
         choices: [1, 2, 3],     // THIS DESCRIBES THE POSSIBLE CHOICES THE USER CAN MAKE
         answer: 1               // THIS IS THE CORRECT ANSWER 
     },
     {
-        text: "question four", // THIS IS A REFERENCE TO HTML ELEMENT*
+        text: document.getElementById(""), // THIS IS A REFERENCE TO HTML ELEMENT*
         choices: [1, 2, 3],     // THIS DESCRIBES THE POSSIBLE CHOICES THE USER CAN MAKE
         answer: 2               // THIS IS THE CORRECT ANSWER 
     },  
     {
-        text: "question five", // THIS IS A REFERENCE TO HTML ELEMENT*
+        text: document.getElementById(""), // THIS IS A REFERENCE TO HTML ELEMENT*
         choices: [1, 2, 3],     // THIS DESCRIBES THE POSSIBLE CHOICES THE USER CAN MAKE
         answer: 1               // THIS IS THE CORRECT ANSWER 
     }, 
     {
-        text: "question six", // THIS IS A REFERENCE TO HTML ELEMENT*
+        text: document.getElementById(""), // THIS IS A REFERENCE TO HTML ELEMENT*
         choices: [1, 2, 3],     // THIS DESCRIBES THE POSSIBLE CHOICES THE USER CAN MAKE
         answer: 3               // THIS IS THE CORRECT ANSWER 
     }, 
     {
-        text: "question seven", // THIS IS A REFERENCE TO HTML ELEMENT*
+        text: document.getElementById(""), // THIS IS A REFERENCE TO HTML ELEMENT*
         choices: [1, 2, 3],     // THIS DESCRIBES THE POSSIBLE CHOICES THE USER CAN MAKE
         answer: 3              // THIS IS THE CORRECT ANSWER 
     }, 
 ]// ***(WHERE I AM BUILDING OUT THE QUESTIONS TITLE, BODY, ANSWERS, RATHER THAN IN JS).
-
 
 // EVERYTHING UNDER THIS LINE WAS DONE DURING TUTOR SESSION 3.26.22 //
 
@@ -53,7 +54,7 @@ startButton.addEventListener("click", function() {
     var startElement = document.getElementById("start");
     startElement.setAttribute("class", "hide")
 // SHOW THE QUESTIONS:
-    var quizElement = document.getElementById("quiz");
+    var quizElement = document.getElementById("all-questions");
     quizElement.removeAttribute("class");
 // CALL THE FUNCTION TO START BUILDING THE QUESTIONS:
     buildQuestion();
@@ -77,7 +78,7 @@ function buildQuestion() {
 // THE USER MAKES THE CHOICE BY CLICKING THE BUTTON WITH THE CORRECT ANSWER
         button.onclick = function() {
             console.log(this.value)
-            console.log(questionsArray[i].answer)
+            //console.log(questionsArray[i].answer)
 // IF THE CHOICE THE USER MADE IS THE CORRECT ANSWER:
             if (this.value == questionsArray[i].answer) {
                 console.log("right");
