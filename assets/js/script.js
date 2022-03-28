@@ -5,8 +5,35 @@ var i = 0;
 // THIS IS DESCRIBING THAT THE VARIABLE "score" INITIALLY STARTS AT 0 POINTS:
 var score = 0;
 
-// THIS IS A TIMER. IT WILL START COUNTING DOWN ON "START"
+var count=180;
 
+var counter=setInterval(timer, 1000); //1000 will run it every 1 second
+
+
+// THIS IS A TIMER. IT WILL START COUNTING DOWN ON "START"
+function startTimer() {
+    // THIS ENSURES THE TIMER WILL COUNT DOWN BY 1 SECOND AT A TIME & DISPLAY THE TIMER TO USER
+    count = count-1;
+    document.getElementById("timer").innerHTML = count + " seconds left"; 
+        if (counter ==+ 0) {
+            saveScore();
+
+        // IF THE TIMER HITS 0, THE PLAYER IS OUT OF TIME. 
+        if (count <= 0) {
+            alert("Time's up!");
+            // STOP THE TIMER.
+            clearInterval(counter);
+            // STOP THE TIMER.
+            saveScore();
+        }
+        else {
+
+        }
+        askQuestion();
+    }
+};
+
+// IF IT IS BIGGER THAN ZERO, KEEP COUNTING DOWN
 
 // NEED TO MAKE A LISTENER EVENT TO SHOW WHEN AN A QUESTION HAS BEEN ANSWERED
 // !!!
@@ -61,7 +88,7 @@ startButton.addEventListener("click", function() {
     var quizElement = document.getElementById("all-questions");
     quizElement.removeAttribute("class");
 // CALL THE FUNCTION TO START BUILDING THE QUESTIONS:
-    askQuestion();
+    startTimer();
 })
 
 // THIS FUNCTION WILL DISPLAY A QUESTION FOR THE USER TO ANSWER //
@@ -116,7 +143,7 @@ function askQuestion() {
 // THIS IS THE END OF THE FUNCTION TO DISPLAY A QUESTION FOR THE USER TO ANSWER //
 
 
-// THIS IS THE VARIABLE WHERE I AM DEFINING THE USER'S DATE AS HIGHSCORE*
+// THIS IS THE VARIABLE WHERE I AM DEFINING THE USER'S DATA AS HIGHSCORE*
 var highscores = []         // *** I'M GOING TO BUILD OUT THE STRUCTURE FOR DISPLAYING HIGHSCORE IN HTML
                             // *** AS WITH THE QUESTIONS, I WOULD PREFER TO DESIGN THEM IN HTML AND CSS
                             // *** AND REFER TO THEM HERE IN JS TO MANIPULATE THE GAME FUNCTIONS.

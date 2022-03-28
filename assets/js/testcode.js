@@ -15,7 +15,7 @@ function showResults(questions, quizContainer, resultsContainer){
 		userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
 		
 		// if answer is correct
-		if(userAnswer===questions[i].correctAnswer){git 
+		if(userAnswer===questions[i].correctAnswer){git
 			// add to the number of correct answers
 			numCorrect++;
 			
