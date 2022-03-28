@@ -10,37 +10,37 @@ var score = 0;
 // EXPLAINING THE CONTENT OF EACH QUESTION IN THE QUIZ //
 var questionsArray = [
     {
-        text: document.getElementById(""),   // THIS IS A REFERENCE TO HTML ELEMENT*
+        text: document.getElementById("question-1"),   // THIS IS A REFERENCE TO HTML ELEMENT*
         choices: [1, 2, 3],     // THIS DESCRIBES THE POSSIBLE CHOICES THE USER CAN MAKE
         answer: 2               // THIS IS THE CORRECT ANSWER 
     },
     {
-        text: document.getElementById(""),  // THIS IS A REFERENCE TO HTML ELEMENT*
+        text: document.getElementById("question-2"),  // THIS IS A REFERENCE TO HTML ELEMENT*
         choices: [1, 2, 3],     // THIS DESCRIBES THE POSSIBLE CHOICES THE USER CAN MAKE
         answer: 3               // THIS IS THE CORRECT ANSWER 
     },
     {
-        text: document.getElementById(""), // THIS IS A REFERENCE TO HTML ELEMENT*
+        text: document.getElementById("question-3"), // THIS IS A REFERENCE TO HTML ELEMENT*
         choices: [1, 2, 3],     // THIS DESCRIBES THE POSSIBLE CHOICES THE USER CAN MAKE
         answer: 1               // THIS IS THE CORRECT ANSWER 
     },
     {
-        text: document.getElementById(""), // THIS IS A REFERENCE TO HTML ELEMENT*
+        text: document.getElementById("question-4"), // THIS IS A REFERENCE TO HTML ELEMENT*
         choices: [1, 2, 3],     // THIS DESCRIBES THE POSSIBLE CHOICES THE USER CAN MAKE
         answer: 2               // THIS IS THE CORRECT ANSWER 
     },  
     {
-        text: document.getElementById(""), // THIS IS A REFERENCE TO HTML ELEMENT*
+        text: document.getElementById("question-5"), // THIS IS A REFERENCE TO HTML ELEMENT*
         choices: [1, 2, 3],     // THIS DESCRIBES THE POSSIBLE CHOICES THE USER CAN MAKE
         answer: 1               // THIS IS THE CORRECT ANSWER 
     }, 
     {
-        text: document.getElementById(""), // THIS IS A REFERENCE TO HTML ELEMENT*
+        text: document.getElementById("question-6"), // THIS IS A REFERENCE TO HTML ELEMENT*
         choices: [1, 2, 3],     // THIS DESCRIBES THE POSSIBLE CHOICES THE USER CAN MAKE
         answer: 3               // THIS IS THE CORRECT ANSWER 
     }, 
     {
-        text: document.getElementById(""), // THIS IS A REFERENCE TO HTML ELEMENT*
+        text: document.getElementById("question-7"), // THIS IS A REFERENCE TO HTML ELEMENT*
         choices: [1, 2, 3],     // THIS DESCRIBES THE POSSIBLE CHOICES THE USER CAN MAKE
         answer: 3              // THIS IS THE CORRECT ANSWER 
     }, 
