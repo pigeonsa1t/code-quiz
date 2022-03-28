@@ -5,7 +5,11 @@ var i = 0;
 // THIS IS DESCRIBING THAT THE VARIABLE "score" INITIALLY STARTS AT 0 POINTS:
 var score = 0;
 
+// THIS IS A TIMER. IT WILL START COUNTING DOWN ON "START"
+
+
 // NEED TO MAKE A LISTENER EVENT TO SHOW WHEN AN A QUESTION HAS BEEN ANSWERED
+// !!!
 
 // EXPLAINING THE CONTENT OF EACH QUESTION IN THE QUIZ //
 var questionsArray = [
@@ -57,11 +61,11 @@ startButton.addEventListener("click", function() {
     var quizElement = document.getElementById("all-questions");
     quizElement.removeAttribute("class");
 // CALL THE FUNCTION TO START BUILDING THE QUESTIONS:
-    buildQuestion();
+    askQuestion();
 })
 
 // THIS FUNCTION WILL DISPLAY A QUESTION FOR THE USER TO ANSWER //
-function buildQuestion() {
+function askQuestion() {
 // THIS WILL DISPLAY THE TEXT ATTRIBUTE OF THE QUESTIONS ARRAY //
     var quizTitle = document.getElementById("question-title");
     quizTitle.textContent = questionsArray[i].text;
@@ -75,16 +79,21 @@ function buildQuestion() {
         button.textContent = choice;
 // THIS SETS AN ATTRIBUTE "VALUE" WHICH IS EQUAL TO THE CHOICE THE USER MADE
         button.setAttribute("value", choice)
-// THE USER MAKES THE CHOICE BY CLICKING THE BUTTON WITH THE CORRECT ANSWER
+// THE USER MAKES THE CHOICE BY CLICKING THE BUTTON WITH THE CORRECT ANSWER:
         button.onclick = function() {
+            // show me:
             console.log(this.value)
-            //console.log(questionsArray[i].answer)
+            // show me:
+            console.log(questionsArray[i].answer)
+
 // IF THE CHOICE THE USER MADE IS THE CORRECT ANSWER:
             if (this.value == questionsArray[i].answer) {
+                // show me:
                 console.log("right");
             }
 // IF THE CHOICE THE USER MADE IS ANYTHING *BUT* THE CORRECT ANSWER:
             else {
+                // show me:
                 console.log("wrong");
             }
 // THIS DECLARATION SHOWS THAT THE VALUE "i" IS INCREASING BY A FACTOR OF 1 EACH TIME:
@@ -92,11 +101,12 @@ function buildQuestion() {
 // WHEN ALL QUESTIONS HAVE BEEN ASKED AND ANSWERED: 
             if (i === questionsArray.length) {
 // CALL FUNCTION TO END GAME
+                // show me:
                 console.log("end game");
             }
 // IF THERE ARE STILL QUESTIONS THAT NEED TO BE ASKED:
             else {
-                buildQuestion();
+                askQuestion();
             }
         }
 // IN THE HTML ELEMENT BUTTON BOX, THE CONTENT(BUTTON) WILL BE APENDED TO REFLECT CHANGES:
