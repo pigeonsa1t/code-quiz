@@ -1,3 +1,4 @@
+// TEST SPACE || SAVE FOR LATER //
 // 3. on submit show results
 function showResults(questions, quizContainer, resultsContainer){
 	
@@ -28,7 +29,6 @@ function showResults(questions, quizContainer, resultsContainer){
 			answerContainers[i].style.color = 'red';
 		}
 	}
-
 	// show number of correct answers out of total
 	resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
 }
@@ -46,3 +46,57 @@ var submitButton = document.getElementById('submit');
 // Now that everything's in place, you can generate your JavaScript quiz!
 generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
 // Congrats!
+
+
+
+
+
+
+
+
+//THIS DEFINES "startTimer" AS BOTH A TIMER AND A DISPLAY PROPERTY
+function startTimer(duration, display) {
+    //THE VARIABLE "timer" IS EQUAL TO 
+    var timer = duration, minutes, seconds;
+    setInterval(function() {
+    
+    minutes = parseInt(timer / 60, 10);
+    seconds = parseInt(timer % 60, 10);
+    
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+    
+    display.textContent = minutes + " :" + seconds;
+    
+    if (--timer <= 0) {
+        timer = duration;
+    }
+    }, 1000);
+}
+
+
+
+
+
+    instance = this,
+    seconds = options.seconds || 10,
+    showTimer = options.onShowTimer || function () {};
+    counterEnd = options.onCounterEnd || function () {};
+
+    function decrementCounter() {
+        showTimer(seconds);
+        if (timer === 0) {
+            counterEnd();
+            instance.stop();
+        }
+        seconds --;
+    }
+    this.start = function () {
+        clearInterval(timer);
+        timer = 0;
+        seconds = options.seconds;
+        timer = setInterval(decrementCounter, 1000);
+    };
+    this.stop = function () {
+        clearInterval(timer);
+    }

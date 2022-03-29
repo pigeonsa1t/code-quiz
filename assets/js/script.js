@@ -7,14 +7,13 @@ var score = 0;
 
 var count=180;
 
-var counter=setInterval(timer, 1000); //1000 will run it every 1 second
-
+var counter = setInterval(startTimer, 1000); //1000 will run it every 1 second
 
 // THIS IS A TIMER. IT WILL START COUNTING DOWN ON "START"
 function startTimer() {
     // THIS ENSURES THE TIMER WILL COUNT DOWN BY 1 SECOND AT A TIME & DISPLAY THE TIMER TO USER
     count = count-1;
-    document.getElementById("timer").innerHTML = count + " seconds left"; 
+    document.getElementById("timerText").innerHTML = count + " seconds left"; 
         if (counter ==+ 0) {
             saveScore();
 
