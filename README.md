@@ -33,4 +33,4 @@ AS A coding boot camp student I WANT to take a timed quiz on JavaScript fundamen
 
 ================================================================
 
-### Final Product: https://pigeonsa1t.github.io/code-quiz/
+### GitHub Deployment: https://pigeonsa1t.github.io/code-quiz/

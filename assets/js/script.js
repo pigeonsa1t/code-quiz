@@ -6,50 +6,32 @@ var index = 0;
 
 var score = 0;
 
-var count = 10;
-
-// NEED TO MAKE A LISTENER EVENT TO SHOW WHEN AN A QUESTION HAS BEEN ANSWERED
-// !!!
+var count = 100;
 
 // EXPLAINING THE CONTENT OF EACH QUESTION IN THE QUIZ //
 var questionsArray = [
   {
-    // THIS IS A REFERENCE TO HTML ELEMENT*
-    text: "this is text",
+    // QUESTION TEXT:
+    text: "this is QUESTION 1",
     // THIS DESCRIBES THE POSSIBLE CHOICES THE USER CAN MAKE
     choices: [1, 2, 3],
     // THIS IS THE CORRECT ANSWER
     answer: 2,
   },
   {
-    text: "",
+    text: "this is QUESTION 2",
     choices: [1, 2, 3],
     answer: 3,
   },
   {
-    text: "",
+    text: "this is QUESTION 3",
     choices: [1, 2, 3],
     answer: 1,
   },
   {
-    text: "",
+    text: "this is QUESTION 4",
     choices: [1, 2, 3],
     answer: 2,
-  },
-  {
-    text: "",
-    choices: [1, 2, 3],
-    answer: 1,
-  },
-  {
-    text: "",
-    choices: [1, 2, 3],
-    answer: 3,
-  },
-  {
-    text: "",
-    choices: [1, 2, 3],
-    answer: 3,
   },
 ];
 
