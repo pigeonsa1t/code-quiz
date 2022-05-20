@@ -48,7 +48,8 @@ function runTimer() {
     console.log("Out of Time.");
     clearInterval(counter);
   }
-  document.getElementById("timerText").innerHTML = count + " seconds left";
+  document.getElementById("timerText").innerHTML =
+    " Timer: " + count + " seconds left";
 }
 
 startButton.addEventListener("click", function () {
