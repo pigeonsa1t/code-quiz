@@ -12,7 +12,7 @@ var count = 100;
 var questionsArray = [
   {
     // QUESTION TEXT:
-    text: "this is QUESTION 1",
+    text: "What is the coolest type of bird?",
     // THIS DESCRIBES THE POSSIBLE CHOICES THE USER CAN MAKE
     choices: [1, 2, 3],
     // THIS IS THE CORRECT ANSWER
